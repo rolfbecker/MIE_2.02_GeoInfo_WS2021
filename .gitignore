@@ -1,0 +1,31 @@
+# MIE_2.02_GeoInfo Course Material
+# R. Becker, 2020-11-04, V001
+
+# Use .gitignore to not share all solutions at once.
+# By default ignore all directories containing solutions denoted by trailing pattern _soln
+
+*_soln/
+*_dev/
+*_INCLASS/
+tmp/
+
+#data/
+#data/original/DTM_Xanten*
+
+data/original/NRW_DTM_Xanten/dgm1_05170052_Xanten_EPSG4647_XYZ/
+data/original/NRW_DOP_Olpe/
+
+data/original/DWD/
+
+
+data/generated/DWD/hourly/precipitation/recent/prec_ts_appended.csv
+
+*.ipynb_checkpoints/
+*checkpoint.ipynb
+
+
+# Exceptions allow to disseminate the solutions selectively.
+
+!gi0301_ALS_DTM_NRW_soln
+!gi0321_Castra_Vetera_Georeferencing_soln
+!gi0601_DWD_Stations_and_TS_for_TM_soln
