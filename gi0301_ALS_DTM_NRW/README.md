@@ -45,7 +45,7 @@ The attempt to install gdal in the base environment of conda leads often to **co
 3) Test the installation: Open an Anaconda terminal, activate the new environment by calling `conda activate geo` on the command line and start Jupyter lab in the browser by calling `jupyter-lab` on the command line. This causes Jupyter-Lab to tun in the new environment where gdal is insatlled. In Jupyter Lab create a new notebook and check, whether you can execute the following command: <br>`from osgeo import osr, ogr, gdal`.
 
 4) Download the ALS DTM zip archive of the municipality of Xanten (approx. 500 MB packed and 4 GB unpacked): 
-https://www.opengeodata.nrw.de/produkte/geobasis/hm/dgm1_xyz/dgm1_xyz_paketiert/dgm1_05170052_Xanten_EPSG4647_XYZ.zip
+https://www.opengeodata.nrw.de/produkte/geobasis/hm/3dm_l_las/3dm_l_las_paketiert/3dm_l_las_05170052_Xanten_EPSG25832.zip
 
 ATTENTION! The Zip archive with Xanten ALS data is 517 MB large! Uncompressed the data needs approx. 4 GB!!!
 
