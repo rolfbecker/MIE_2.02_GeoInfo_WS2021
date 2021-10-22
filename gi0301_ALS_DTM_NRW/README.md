@@ -1,6 +1,6 @@
 # Digital Terrain Model
 
-In this activity we cover the topic "Digital Terrain Models (DTM)" using the example of the official DTM provided by our federal state of Nordrhein-Westfalen (NRW). The DTM is derived from Airborne Laser Scanning.
+In this activity we cover the topic "Digital Terrain Models (DTM)" using the example of the official DTM provided by our federal state of Nordrhein-Westfalen (NRW). The DTM is derived from Airborne Laser Scanning (ALS). A good introduction to ALS is given by Petteri Packalén, University of Joensuu, Faculty of Forestry: ("Introduction to Lidar and Airborne Laser Scanning")[https://slideplayer.com/slide/10386286/].
 
 Browse the data archive providing Airborne Laser Scan data of the Federal State of Nordrhein-Westfalen.
 
