@@ -22,8 +22,15 @@ The token `(base)` shows the active environment.
 #  List all environments
 conda info --envs
 
+# show conda configuration
+conda config --show
+
+# Look at the order of the channels. Make sure that conda-forge comes first. Change ch. priority from flexible to strict. 
+conda config --prepend channels conda-forge
+conda config --set channel_priority strict
+
 # create the new environment called geo
-conda create --name geo 
+conda create --name geo python=3.8
 
 # activate the new enviroment
 conda activate geo # IMPORTANT!!!
