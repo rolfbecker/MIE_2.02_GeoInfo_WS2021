@@ -29,8 +29,8 @@ conda config --show
 conda config --prepend channels conda-forge
 conda config --set channel_priority strict
 
-# create the new environment called geo with the python version of your choice (e.g. python=3 for the latest, or python=3.8 specifically)
-conda create --name geo python=3
+# create the new environment called geo with the python version of your choice 
+conda create --name geo python=3 # e.g. python=3 for the latest, or python=3.8 for a specific version
 
 # activate the new enviroment
 conda activate geo # IMPORTANT!!!
