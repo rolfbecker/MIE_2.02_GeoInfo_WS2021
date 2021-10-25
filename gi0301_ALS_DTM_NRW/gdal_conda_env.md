@@ -58,7 +58,7 @@ jupyter-lab
 conda config --prepend channels conda-forge
 conda config --set channel_priority strict
 conda create --name geo python=3 jupyterlab geopandas
-conda acitvate geo
+conda activate geo
 jupyter-lab
 ```
 
