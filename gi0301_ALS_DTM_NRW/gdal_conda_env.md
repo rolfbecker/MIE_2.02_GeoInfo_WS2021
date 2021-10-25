@@ -66,7 +66,7 @@ jupyter-lab
 ## ISSUES: PROJ (GEOPANDAS, GDAL) ISSUE!!! (2021-10-25)
 
 Installing `pyproj` with `conda` sometimes does not set the environment variable **`PROJ_LIB`** in the current conda environment. <br>
-**Workaround: Set the environment variable explicitly in your Python code!**
+**Workaround 1: Set the environment variable explicitly in your Python code!**
 
 ```
 import os
@@ -74,20 +74,40 @@ print(os.environ['PROJ_LIB'])
 print(os.environ['GDAL_DATA'])
 
 -> C:\OSGeo4W64\share\proj (wrong!)
--> C:\Users\me\Anaconda3\envs\test\Library\share\gdal
+-> C:\Users\me\Anaconda3\envs\geo\Library\share\gdal
 
 # Set the env var
-os.environ['PROJ_LIB'] = r'C:\Users\me\Anaconda3\envs\test\Library\share\proj'
+os.environ['PROJ_LIB'] = r'C:\Users\me\Anaconda3\envs\geo\Library\share\proj'
 print(os.environ['PROJ_LIB'])
 print(os.environ['GDAL_DATA'])
 
--> C:\Users\me\Anaconda3\envs\test\Library\share\proj (correct!)
--> C:\Users\me\Anaconda3\envs\test\Library\share\gdal
+-> C:\Users\me\Anaconda3\envs\geo\Library\share\proj (correct!)
+-> C:\Users\me\Anaconda3\envs\geo\Library\share\gdal
 
 # Now geopandas (i.e. the projection module as part of it) should work:
 import geopandas as gpd
 
 ```
+
+**Workaround 2: Set the environment variable in your canda environment**
+
+On Windows use the Anaconda power shell and activate the conda environment you want to work with:
+
+```
+# acitvate conda env
+conda activate geo
+
+# list operating system (Windows) environment variables 
+Get-ChildItem -Path Env:\
+
+-> PROJ_LIB                       C:\OSGeo4W64\share\proj (wrong!)
+
+$env:PROJ_LIB="C:\Users\me\Anaconda3\envs\geo\Library\share\proj"
+
+jupyter-lab
+```
+
+
 
 
 
