@@ -54,7 +54,7 @@ jupyter-lab
 
 **IMPORTANT: PROJ (GEOPANDAS, GDAL) ISSUE!!! (2021-10-25)**
 
-Installing `pyproj` with `conda` sometimes does not set the right environment variable in the current conda environment. <br>
+Installing `pyproj` with `conda` sometimes does not set the environment variable **`PROJ_LIB`** in the current conda environment. <br>
 **Workaround: Set the environment variable explicitly in your Python code!**
 
 ```
@@ -63,7 +63,7 @@ print(os.environ['PROJ_LIB'])
 print(os.environ['GDAL_DATA'])
 
 -> C:\OSGeo4W64\share\proj
--> C:\Users\rb\Anaconda3\envs\test\Library\share\gdal
+-> C:\Users\me\Anaconda3\envs\test\Library\share\gdal
 ```
 
 
