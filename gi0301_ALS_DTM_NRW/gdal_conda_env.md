@@ -30,28 +30,42 @@ conda config --prepend channels conda-forge
 conda config --set channel_priority strict
 
 # In case you want do DELETE an OLD environment
-conda env remove --name geoinfo
+conda env remove --name geo
 
 # CREATE NEW the new environment called geo with the python version of your choice 
-conda create --name geo python=3 # e.g. python=3 for the latest, or python=3.8 for a specific version
+conda create --name geo python=3.8 # for the specific version 3.8 or use python=3 for the latest version
 
 # activate the new enviroment
 conda activate geo # IMPORTANT!!!
 
-# Install Jupyter
-conda install jupyter jupyterlab
+# Install JupyterLab meta-package
+conda install jupyterlab
 
-# Install pandas, numpy (implicit) and geopandas
-conda install --channel conda-forge pandas geopandas 
+# Install geopandas-metapackage (installation of pandas, numpy etc.)
+conda install geopandas 
 
-# install gdal and libgdal, are part of geopandas installation, too
-conda install --channel conda-forge gdal libgdal 
+# numpy, pandas, gdal, etc. are installed in the scope of these meta-packages 
 ```
 
 Start Jupyter-Lab from the command line in the active environment:
 ```
 jupyter-lab
 ```
+
+**IMPORTANT: PROJ (GEOPANDAS, GDAL) ISSUE!!! (2021-10-25)**
+
+Installing `pyproj` with `conda` sometimes does not set the right environment variable in the current conda environment. <br>
+**Workaround: Set the environment variable explicitly in your Python code!**
+
+```
+import os
+print(os.environ['PROJ_LIB'])
+print(os.environ['GDAL_DATA'])
+
+-> C:\OSGeo4W64\share\proj
+-> C:\Users\rb\Anaconda3\envs\test\Library\share\gdal
+```
+
 
 
 ## Start Jupyter-Lab and Test the Installation ##
