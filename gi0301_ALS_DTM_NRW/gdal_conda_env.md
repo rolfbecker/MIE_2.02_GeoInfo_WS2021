@@ -41,7 +41,7 @@ conda install jupyter jupyterlab
 # Install pandas, numpy (implicit) and geopandas
 conda install --channel conda-forge pandas geopandas 
 
-# install gdal and libgdal (difference? idk)
+# install gdal and libgdal, are part of geopandas installation, too
 conda install --channel conda-forge gdal libgdal 
 ```
 
