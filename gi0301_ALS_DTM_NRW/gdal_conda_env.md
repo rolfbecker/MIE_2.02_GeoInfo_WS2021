@@ -1,4 +1,4 @@
-# Installation of GDAL in a Clean Conda Environment
+# Installation of GDAL and GEOPANDAS (PYPROJ) in a Clean Conda Environment
 
 he attempt to install gdal by calling `conda install -c conda-forge gdal` in the base environment of conda leads often to conflicts and is refused. But if this installation works for you do not need to create another environment and coud stop reading.
 
