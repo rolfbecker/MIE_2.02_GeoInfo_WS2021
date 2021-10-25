@@ -14,7 +14,7 @@ http://nero-docs.stanford.edu/jupyter-customEnv.html
 
 ## Create a New Conda Environment
 
-On Windows: Open either an Anaconda Prompt or a Powershell Prompt (Start -> Anaconda3 -> Anaconda Powershell Prompt). On other operating systems open a terminal. On the command line prompt you should see an indicator which Python environment is currently active, e.g. `(base) PS C:\Users\me`
+On Windows: Open an Anaconda Powershell Prompt (Start -> Anaconda3 -> Anaconda Powershell Prompt). On other operating systems open a terminal. On the command line prompt you should see an indicator which Python environment is currently active, e.g. `(base) PS C:\Users\me`
 
 The token `(base)` shows the active environment.
 
@@ -29,7 +29,10 @@ conda config --show
 conda config --prepend channels conda-forge
 conda config --set channel_priority strict
 
-# create the new environment called geo with the python version of your choice 
+# In case you want do DELETE an OLD environment
+conda env remove --name geoinfo
+
+# CREATE NEW the new environment called geo with the python version of your choice 
 conda create --name geo python=3 # e.g. python=3 for the latest, or python=3.8 for a specific version
 
 # activate the new enviroment
