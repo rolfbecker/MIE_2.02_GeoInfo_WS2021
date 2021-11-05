@@ -1,4 +1,4 @@
-# Installation of GDAL in a Clean Conda Environment
+# Installation of GDAL and GEOPANDAS (PYPROJ) in a Clean Conda Environment
 
 he attempt to install gdal by calling `conda install -c conda-forge gdal` in the base environment of conda leads often to conflicts and is refused. But if this installation works for you do not need to create another environment and coud stop reading.
 
@@ -14,7 +14,7 @@ http://nero-docs.stanford.edu/jupyter-customEnv.html
 
 ## Create a New Conda Environment
 
-On Windows: Open either an Anaconda Prompt or a Powershell Prompt (Start -> Anaconda3 -> Anaconda Powershell Prompt). On other operating systems open a terminal. On the command line prompt you should see an indicator which Python environment is currently active, e.g. `(base) PS C:\Users\me`
+On Windows: Open an Anaconda Powershell Prompt (Start -> Anaconda3 -> Anaconda Powershell Prompt). On other operating systems open a terminal. On the command line prompt you should see an indicator which Python environment is currently active, e.g. `(base) PS C:\Users\me`
 
 The token `(base)` shows the active environment.
 
@@ -29,26 +29,86 @@ conda config --show
 conda config --prepend channels conda-forge
 conda config --set channel_priority strict
 
-# create the new environment called geo
-conda create --name geo python=3.8
+# In case you want do DELETE an OLD environment
+conda env remove --name geo
+
+# CREATE NEW the new environment called geo with the python version of your choice 
+conda create --name geo python=3.8 # for the specific version 3.8 or use python=3 for the latest version
 
 # activate the new enviroment
 conda activate geo # IMPORTANT!!!
 
-# Install Jupyter
-conda install jupyter jupyterlab
+# Install JupyterLab meta-package
+conda install jupyterlab
 
-# Install pandas, numpy (implicit) and geopandas
-conda install --channel conda-forge pandas geopandas 
+# Install geopandas-metapackage (installation of pandas, numpy etc.)
+conda install geopandas 
 
-# install gdal and libgdal (difference? idk)
-conda install --channel conda-forge gdal libgdal 
+# numpy, pandas, gdal, etc. are installed in the scope of these meta-packages 
 ```
 
 Start Jupyter-Lab from the command line in the active environment:
 ```
 jupyter-lab
 ```
+
+## Create a New Conda Environment, condensed
+
+```
+conda config --prepend channels conda-forge
+conda config --set channel_priority strict
+conda create --name geo python=3 jupyterlab geopandas
+conda activate geo
+jupyter-lab
+```
+
+
+## ISSUES: PROJ (GEOPANDAS, GDAL) ISSUE!!! (2021-10-25)
+
+Installing `pyproj` with `conda` sometimes does not set the environment variable **`PROJ_LIB`** in the current conda environment. <br>
+**Workaround 1: Set the environment variable explicitly in your Python code!**
+
+```
+import os
+print(os.environ['PROJ_LIB'])
+print(os.environ['GDAL_DATA'])
+
+-> C:\OSGeo4W64\share\proj (wrong!)
+-> C:\Users\me\Anaconda3\envs\geo\Library\share\gdal
+
+# Set the env var
+os.environ['PROJ_LIB'] = r'C:\Users\me\Anaconda3\envs\geo\Library\share\proj'
+print(os.environ['PROJ_LIB'])
+print(os.environ['GDAL_DATA'])
+
+-> C:\Users\me\Anaconda3\envs\geo\Library\share\proj (correct!)
+-> C:\Users\me\Anaconda3\envs\geo\Library\share\gdal
+
+# Now geopandas (i.e. the projection module as part of it) should work:
+import geopandas as gpd
+
+```
+
+**Workaround 2: Set the environment variable in your canda environment**
+
+On Windows use the Anaconda power shell and activate the conda environment you want to work with:
+
+```
+# acitvate conda env
+conda activate geo
+
+# list operating system (Windows) environment variables 
+Get-ChildItem -Path Env:\
+
+-> PROJ_LIB                       C:\OSGeo4W64\share\proj (wrong!)
+
+$env:PROJ_LIB="C:\Users\me\Anaconda3\envs\geo\Library\share\proj"
+
+jupyter-lab
+```
+
+
+
 
 
 ## Start Jupyter-Lab and Test the Installation ##
