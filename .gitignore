@@ -12,9 +12,9 @@ tmp/
 #data/
 #data/original/DTM_Xanten*
 
-data/original/NRW_DTM_Xanten_EPSG_25832_XYZ/dgm1_*.xyz.gz
-data/original/NRW_DTM_Hees_EPSG_25832_XYZ/dgm1_*.xyz.gz
-data/original/NRW_DTM_NRW_EPSG_25832_XYZ/dgm1_*.xyz.gz
+data/original/NRW_DTM_Xanten_EPSG_25832_XYZ/dgm1_*.xyz*
+data/original/NRW_DTM_Hees_EPSG_25832_XYZ/dgm1_*.xyz*
+data/original/NRW_DTM_NRW_EPSG_25832_XYZ/dgm1_*.xyz*
 
 data/original/NRW_DTM_Xanten_EPSG_4647_XYZ_old/dgm1_05170052_Xanten_EPSG4647_XYZ/
 data/original/NRW_DTM_Xanten_EPSG_4647_XYZ_old/dgm1_05170052_Xanten_EPSG4647_XYZ.zip
