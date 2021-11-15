@@ -1,4 +1,4 @@
-# Digital Terrain Model of the Municipality of Xanten
+# Digital Terrain Model of the Municipality of Xanten (old EPSG:4647)
 
 Because of the data size we decided not to distribute the DTM based on Airborne Laser Scanning (ALS) via Git. 
 
