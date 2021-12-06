@@ -1,6 +1,6 @@
 # Database Setup #
 
-## Prepare the users and the database for environmental monitoring ##
+## Create users and database for environmental monitoring applications##
 
 Let us create new users and a new database which we will use for first exercises to get used to SQL and relational algebra (RA). Later we will use the setup to manage environmental data. The environmental database is named `env_db` and the related users `env_master` and `env_user`, respectively.
 
@@ -9,7 +9,7 @@ Open a command line interface, e.g. by running `cmd` or open the *Anaconda Power
 Change to the subdirectory where the sql scripts are located, i.e [./sql_scripts/](./sql_scripts/). The SQL scripts have the extension *.sql. 
 Read the code in the scripts. Open the scripts in your favorite editor.
 
-**Change and remember the passwords** in the SQL script creating the users!
+**Change and remember the passwords** in the SQL script creating the users! Open the scripts and change the passwords!
 
 Be sure you know the host your postgres database resides on (e.g. localhost) and the password of user postgres.
 
@@ -23,7 +23,7 @@ Now let us create the new database `env_db`:
 
 	psql -h localhost -U postgres -d postgres -f 020_create_database_env_db_V001.sql
 
-## First (temporary)  relations used in the presentation on Relational Algebra ##
+## Create relations "Bar" and "Sells" used in the presentation on Relational Algebra ##
 
 Now use the new DB user `env_user` to create the tables (relations) in the new database `env_db` used for the first exercises.
 
