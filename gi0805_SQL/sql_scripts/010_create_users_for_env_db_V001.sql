@@ -1,3 +1,8 @@
+/* 
+  Connect as (U)ser postgres (superuser) to the maintence (d)atabase postgres:
+  psql -h localhost -U postgres -d postgres 
+*/
+
 /* Super user for the env_db database */
 
 CREATE ROLE env_master WITH
@@ -8,7 +13,7 @@ CREATE ROLE env_master WITH
 	INHERIT
 	NOREPLICATION
 	CONNECTION LIMIT -1
-	PASSWORD 'xxxxxx';
+	PASSWORD 'xyz321';
 
 COMMENT ON ROLE env_master IS 'Superuser of the env_db database.';
 
@@ -22,7 +27,7 @@ CREATE ROLE env_user WITH
 	INHERIT
 	NOREPLICATION
 	CONNECTION LIMIT -1
-	PASSWORD 'xxxxxx';
+	PASSWORD 'xyz321';
 	
 COMMENT ON ROLE env_user IS 'Standard user of the env_db database.';
 

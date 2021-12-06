@@ -1,4 +1,9 @@
-/* Environmental database */
+/* 
+  Connect as (U)ser postgres (superuser) to the maintence (d)atabase postgres:
+  psql -h localhost -U postgres -d postgres 
+*/
+
+/* Environmental database env_db */
 
 CREATE DATABASE env_db
     WITH 
