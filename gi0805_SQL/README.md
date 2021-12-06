@@ -9,7 +9,7 @@ Open a command line interface, e.g. by running `cmd` or open the *Anaconda Power
 **Change to the subdirectory with the SQL scripts**, i.e [./sql_scripts/](./sql_scripts/). The SQL scripts have the extension *.sql. 
 Read the code in the scripts. Open the scripts in your favorite editor.
 
-**Change and remember the passwords in the SQL script** creating the users! Open the scripts and change the passwords!
+**Change and remember the passwords in the SQL script** creating the users: [./sql_scripts/010_create_users_for_env_db_V001.sql](./sql_scripts/010_create_users_for_env_db_V001.sql)
 
 Be sure you know the host your postgres database resides on (e.g. localhost) and the password of user postgres.
 
