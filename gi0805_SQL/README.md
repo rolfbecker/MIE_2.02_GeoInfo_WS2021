@@ -36,7 +36,7 @@ Now let us create the new database `env_db`:
 
 ## Create relations "Bar" and "Sells" used in the presentation on Relational Algebra ##
 
-Now use the new DB user `env_user` to create the tables (relations) in the new database `env_db` used for the first exercises.
+Now use the new DB user `env_master` to create the tables (relations) in the new database `env_db` used for the first exercises.
 
 Have a look at the SQL script creating the tables for the _bar example_ of the RA presentation.
 
