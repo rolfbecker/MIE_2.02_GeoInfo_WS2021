@@ -6,6 +6,8 @@
 As GUI based admin tool **pgAdmin4** will be used. 
 <br>Download and install it from [www.pgadmin.org](https://www.pgadmin.org/)
 
+**psql** is a terminal-based front-end to PostgreSQL, a command line interface (CLI). It comes with the PostgreSQL installation.
+
 # Database Setup #
 
 ## Create users and database for environmental monitoring applications ##
