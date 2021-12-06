@@ -1,6 +1,6 @@
 # Database Setup #
 
-## Create users and database for environmental monitoring applications##
+## Create users and database for environmental monitoring applications ##
 
 Let us create new users and a new database which we will use for first exercises to get used to SQL and relational algebra (RA). Later we will use the setup to manage environmental data. The environmental database is named `env_db` and the related users `env_master` and `env_user`, respectively.
 
