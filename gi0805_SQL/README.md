@@ -17,7 +17,7 @@ To create new database users connect as (U)ser postgres (superuser) to the maint
 
 	psql -h localhost -U postgres -d postgres -f 010_create_users_for_env_db_V001.sql
 
-The command line options `-h`, `-U`, `-d`, and `-f` define host (i.e. the server the DB is running on), user (postgres is the DB superuser), database (postgres is name of the maintenance database), and the file with the SQL commands to be executed, respectively. 
+The command line options `-h` defining host (i.e. the server the DB is running on), `-U` user (postgres is the DB superuser), `-d` database (postgres is name of the maintenance database), and `-f` the file with the SQL commands to be executed, respectively. 
 
 Now let us create the new database `env_db`:
 
