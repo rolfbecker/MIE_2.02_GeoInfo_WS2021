@@ -5,7 +5,7 @@ conda install -c conda-forge sqlalchemy psycopg2 pgspecial ipython-sql jupyterla
 
 
 # In case the python projection library used by GDAL does not find the correct projection parameter database you can set it manually.
-# Open the Anaconda prompt and activate the environment you want to use (in my case geo or geo2).
+# Open the Anaconda prompt and activate the environment you want to use (in my case `geo`).
 
 # list operating system (Windows) environment variables 
 Get-ChildItem -Path Env:\
@@ -23,5 +23,4 @@ $env:PROJ_LIB=$env:conda_prefix+"\Library\share\proj"
 
 # Check again:
 echo $env:proj_lib
-
 

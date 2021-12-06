@@ -1,8 +1,18 @@
+# Install PostgreSQL #
+
+**PostgreSQL** is the most advanced open source object relational database management system. 
+
+Download and install it from [www.postgresql.org](https://www.postgresql.org/)
+
+As GUI based admin tool **pgAdmin4** will be used. 
+
+Download and install it from www.pgadmin.org](https://www.pgadmin.org/)
+
 # Database Setup #
 
 ## Create users and database for environmental monitoring applications ##
 
-Let us create new users and a new database which we will use for first exercises to get used to SQL and relational algebra (RA). Later we will use the setup to manage environmental data. The environmental database is named `env_db` and the related users `env_master` and `env_user`, respectively.
+Create new users and a new database which we will use for first exercises to get used to SQL and relational algebra (RA). Later we will use the setup to manage environmental data. The environmental database is named `env_db` and the related users `env_master` and `env_user`, respectively.
 
 Open a command line interface, e.g. by running `cmd` or open the *Anaconda Powershell Prompt* on Windows or open a terminal under Linux.
 
