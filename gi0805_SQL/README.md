@@ -4,7 +4,7 @@
 <br>Download and install it from [www.postgresql.org](https://www.postgresql.org/)
 
 As GUI based admin tool **pgAdmin4** will be used. 
-<br>Download and install it from www.pgadmin.org](https://www.pgadmin.org/)
+<br>Download and install it from [www.pgadmin.org](https://www.pgadmin.org/)
 
 # Database Setup #
 
