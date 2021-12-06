@@ -23,7 +23,7 @@ Read the code in the scripts. Open the scripts in your favorite editor.
 
 Be sure you know the host your postgres database resides on (e.g. localhost) and the password of user postgres.
 
-To create new database users connect as (U)ser postgres (superuser) to the maintence (d)atabase postgres by executing
+Create new database users connect as (U)ser postgres (superuser) to the maintence (d)atabase postgres by executing
 
 	psql -h localhost -U postgres -d postgres -f 010_create_users_for_env_db_V001.sql
 
