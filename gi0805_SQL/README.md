@@ -1,10 +1,10 @@
 # Install PostgreSQL #
 
-**PostgreSQL** is the most advanced open source object relational database management system (ORDBMS). 
+**PostgreSQL** is the most advanced open source object relational database management system (ORDBMS).
 
 Download and install it from [www.postgresql.org](https://www.postgresql.org/)
 
-As GUI based admin tool **pgAdmin4** will be used. 
+As GUI based admin tool **pgAdmin4** will be used.
 
 Download and install it from www.pgadmin.org](https://www.pgadmin.org/)
 
@@ -17,16 +17,16 @@ Our first database for training is `env_db`. Most of the data we will store is r
 
 Create new users and a new database which we will use for first exercises to get used to SQL and relational algebra (RA). Later we will use the setup to manage environmental data. The environmental database is named `env_db` and the related users `env_master` and `env_user`, respectively.
 
-Open a command line interface, e.g. by running `cmd` or open the *Anaconda Powershell Prompt* on Windows or open a terminal under Linux.
+Open a command window to execute **psql**. On Windows you can run `cmd` or open the *Anaconda Powershell Prompt* (if Anaconda is installed). On Linux or Mac OS just open a terminal window.
 
-**Change to the subdirectory with the SQL scripts**, i.e [./sql_scripts/](./sql_scripts/). The SQL scripts have the extension *.sql. 
-Read the code in the scripts. Open the scripts in your favorite editor.
+**Change to the subdirectory with the SQL scripts**, i.e [./sql_scripts/](./sql_scripts/). The SQL scripts have the extension \*.sql.
+<br>Read the code in the scripts. Open the scripts in your favorite editor.
 
 **Change and remember the passwords in the SQL script** creating the users: [./sql_scripts/010_create_users_for_env_db_V001.sql](./sql_scripts/010_create_users_for_env_db_V001.sql)
 
 Be sure you know the host your postgres database resides on (e.g. localhost) and the password of user postgres.
 
-To create new database users connect as (U)ser postgres (superuser) to the maintence (d)atabase postgres by executing
+Create new database users connect as (U)ser postgres (superuser) to the maintence (d)atabase postgres by executing
 
 	psql -h localhost -U postgres -d postgres -f 010_create_users_for_env_db_V001.sql
 
@@ -38,10 +38,6 @@ Now let us create the new database `env_db`:
 
 ## Create relations "Bar" and "Sells" used in the presentation on Relational Algebra ##
 
-Now use the new DB user `env_user` to create the tables (relations) in the new database `env_db` used for the first exercises.
+Now use the new DB user `env_master` to create the tables (relations) in the new database `env_db` used for the first exercises.
 
 Have a look at the SQL script creating the tables for the _bar example_ of the RA presentation.
-
-
-
-
