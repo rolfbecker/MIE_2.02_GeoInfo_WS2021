@@ -21,7 +21,7 @@ The command line options `-h` define host (i.e. the server the DB is running on)
 
 Now let us create the new database `env_db`:
 
-	psql -h <host> -U postgres postgres < 020_create_database_env_db_V001.sql
+	psql -h localhost -U postgres -d postgres -f 020_create_database_env_db_V001.sql
 
 ## First (temporary)  relations used in the presentation on Relational Algebra ##
 
