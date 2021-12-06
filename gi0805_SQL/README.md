@@ -1,12 +1,12 @@
 # Install PostgreSQL #
 
 **PostgreSQL** is the most advanced open source object relational database management system (ORDBMS).
+<br>Download and install it from [www.postgresql.org](https://www.postgresql.org/)
 
-Download and install it from [www.postgresql.org](https://www.postgresql.org/)
+**psql** is a terminal-based front-end to PostgreSQL (command line interface, CLI) and comes with the installation. 
 
-As GUI based admin tool **pgAdmin4** will be used.
-
-Download and install it from www.pgadmin.org](https://www.pgadmin.org/)
+Additionally the GUI based admin tool **pgAdmin4** will be used.
+<br>Download and install it from www.pgadmin.org](https://www.pgadmin.org/)
 
 # Environmental Database Setup #
 
@@ -38,6 +38,10 @@ Now let us create the new database `env_db`:
 
 ## Create relations "Bar" and "Sells" used in the presentation on Relational Algebra ##
 
-Now use the new DB user `env_master` to create the tables (relations) in the new database `env_db` used for the first exercises.
+Admittedly, this data is not environmental data. It is used in the presentation on Relational Algebra (RA). 
+
+Use the new DB user `env_master` to create the tables (relations) in the new database `env_db` used for the first exercises.
 
 Have a look at the SQL script creating the tables for the _bar example_ of the RA presentation.
+
+
