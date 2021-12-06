@@ -2,6 +2,7 @@
 
 **PostgreSQL** is the most advanced open source object relational database management system. 
 <br>Download and install it from [www.postgresql.org](https://www.postgresql.org/)
+<br>**Remember** the postgres superuser **password**!
 
 As GUI based admin tool **pgAdmin4** will be used. 
 <br>Download and install it from [www.pgadmin.org](https://www.pgadmin.org/)
@@ -17,7 +18,7 @@ Create new users and a new database which we will use for first exercises to get
 Open a command window to execute **psql**. On Windows you can run `cmd` or open the *Anaconda Powershell Prompt* (if Anaconda is installed). On Linux or Mac OS just open a terminal window.
 
 **Change to the subdirectory with the SQL scripts**, i.e [./sql_scripts/](./sql_scripts/). The SQL scripts have the extension \*.sql. 
-Read the code in the scripts. Open the scripts in your favorite editor.
+<br>Read the code in the scripts. Open the scripts in your favorite editor.
 
 **Change and remember the passwords in the SQL script** creating the users: [./sql_scripts/010_create_users_for_env_db_V001.sql](./sql_scripts/010_create_users_for_env_db_V001.sql)
 
