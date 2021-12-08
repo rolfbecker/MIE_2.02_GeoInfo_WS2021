@@ -36,7 +36,7 @@ Now let us create the new database `env_db`:
 
 	psql -h localhost -U postgres -d postgres -f 020_create_database_env_db_V001.sql
 
-## Create relations "Bar" and "Sells" used in the presentation on Relational Algebra ##
+# Presentation on Relational Algebra: Create the example relations from the presentation ##
 
 Admittedly, this data is not environmental data but it is used in the presentation on Relational Algebra (RA). 
 
@@ -44,4 +44,5 @@ Use the new DB user `env_master` to create the tables (relations) in the new dat
 
 Have a look at the SQL script creating the tables for the _bar example_ of the RA presentation.
 
+"Bar" and "Sells" used in the presentation on Relational Algebra
 
