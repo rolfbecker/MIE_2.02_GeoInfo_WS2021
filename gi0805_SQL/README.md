@@ -8,7 +8,7 @@
 Additionally the GUI based admin tool **pgAdmin4** will be used.
 <br>Download and install it from www.pgadmin.org](https://www.pgadmin.org/)
 
-# Environmental Database Setup #
+# Environmental database setup #
 
 Our first database for training is `env_db`. Most of the data we will store is related to environmental science, hence the name `env_db`. It is a relational database (RDB) running on the ORDBMS PostgreSQL.
 
@@ -36,13 +36,18 @@ Now let us create the new database `env_db`:
 
 	psql -h localhost -U postgres -d postgres -f 020_create_database_env_db_V001.sql
 
-# Presentation on Relational Algebra: Create the example relations from the presentation ##
+# Create the example relations used in RA presentation #
 
-Admittedly, this data is not environmental data but it is used in the presentation on Relational Algebra (RA). 
+In the presentation on Relational Algebra (RA) several relations are used to demonstrate the different operations.  
+
+Admittedly, this example data is not environmental data but it helps to introduce the concepts.
 
 Use the new DB user `env_master` to create the tables (relations) in the new database `env_db` used for the first exercises.
 
+## Create tables "Bar" and "Sells"
+
 Have a look at the SQL script creating the tables for the _bar example_ of the RA presentation.
 
-"Bar" and "Sells" used in the presentation on Relational Algebra
+	psql -h localhost -U env_master -d env_db -f 030_create_bars_exercise_tables_and_insert_V001.sql
+	
 
