@@ -53,7 +53,7 @@ Have a look at the SQL script [./sql_scripts/030_create_bars_exercise_tables_and
 
 ## Create tables "R", "S", "R1", "R2"
 
-The following command creates more tables necessary for the exercises by exeuting the script [./sql_scripts/040_create_relations_exercise_tables_and_insert_V001.sql](./sql_scripts/040_create_relations_exercise_tables_and_insert_V001.sql) 
+The following script [./sql_scripts/040_create_relations_exercise_tables_and_insert_V001.sql](./sql_scripts/040_create_relations_exercise_tables_and_insert_V001.sql) creates more tables for the exercises:
 
 	psql -h localhost -U env_master -d env_db -f 040_create_relations_exercise_tables_and_insert_V001.sql
 
