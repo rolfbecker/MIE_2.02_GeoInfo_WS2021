@@ -32,7 +32,7 @@ Create new database users connect as (U)ser postgres (superuser) to the maintenc
 
 The command line options define: `-h` host (i.e. the server the DB is running on), `-U` user (postgres is the DB superuser), `-d` database (postgres is name of the maintenance database), and `-f` the file with the SQL commands to be executed.
 
-Now let us create the new database `env_db`:
+Now let us create the new database `env_db` using the script [./sql_scripts/020_create_database_env_db_V001.sql](./sql_scripts/020_create_database_env_db_V001.sql):
 
 	psql -h localhost -U postgres -d postgres -f 020_create_database_env_db_V001.sql
 
@@ -46,14 +46,14 @@ Use the new DB user `env_master` to create the tables (relations) in the new dat
 
 ## Create tables "Bar" and "Sells"
 
-Have a look at the SQL script creating the tables for the _bar example_ of the RA presentation.
+Have a look at the SQL script creating the tables for the _bar example_ of the RA presentation: using the script [./sql_scripts/030_create_bars_exercise_tables_and_insert_V001.sql](./sql_scripts/030_create_bars_exercise_tables_and_insert_V001.sql):
 
 	psql -h localhost -U env_master -d env_db -f 030_create_bars_exercise_tables_and_insert_V001.sql
 
 
 ## Create tables 
 
-Execute the following command to create more tables necessary for the exercises.
+The following command creates more tables necessary for the exercises by exeuting the script [./sql_scripts/040_create_relations_exercise_tables_and_insert_V001.sql](./sql_scripts/040_create_relations_exercise_tables_and_insert_V001.sql) 
 
 	psql -h localhost -U env_master -d env_db -f 040_create_relations_exercise_tables_and_insert_V001.sql
 
