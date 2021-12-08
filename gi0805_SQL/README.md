@@ -38,7 +38,7 @@ Now let us create the new database `env_db`:
 
 ## Create relations "Bar" and "Sells" used in the presentation on Relational Algebra ##
 
-Admittedly, this data is not environmental data. It is used in the presentation on Relational Algebra (RA). 
+Admittedly, this data is not environmental data but it is used in the presentation on Relational Algebra (RA). 
 
 Use the new DB user `env_master` to create the tables (relations) in the new database `env_db` used for the first exercises.
 
