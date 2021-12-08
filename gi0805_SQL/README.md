@@ -49,5 +49,11 @@ Use the new DB user `env_master` to create the tables (relations) in the new dat
 Have a look at the SQL script creating the tables for the _bar example_ of the RA presentation.
 
 	psql -h localhost -U env_master -d env_db -f 030_create_bars_exercise_tables_and_insert_V001.sql
-	
+
+
+## Create tables 
+
+Execute the following command to create more tables necessary for the exercises.
+
+	psql -h localhost -U env_master -d env_db -f 040_create_relations_exercise_tables_and_insert_V001.sql
 
