@@ -9,6 +9,9 @@
 *_INCLASS/
 tmp/
 
+*.ppt
+*.pptx
+
 gdms*/
 
 data/original/NRW_DTM_Xanten_EPSG_25832_XYZ/dgm1_*.xyz*
