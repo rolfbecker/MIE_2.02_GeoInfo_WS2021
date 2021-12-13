@@ -15,7 +15,7 @@ Get-ChildItem -Path Env:\
 echo $env:proj_lib
 
 
-# set the new location of the proj folder (replace <ME> and <ENV with your username and conda environment, resp.):
+# set the new location of the proj folder (replace <ME> and <ENV> with your username and conda environment, resp.):
 #$env:PROJ_LIB="C:\Users\<ME>\Anaconda3\envs\<ENV>\Library\share\proj"
 # OR
 
