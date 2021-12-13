@@ -6,11 +6,11 @@
 **psql** is a terminal-based front-end to PostgreSQL (command line interface, CLI) and comes with the installation. 
 
 Additionally the GUI based admin tool **pgAdmin4** will be used.
-<br>Download and install it from www.pgadmin.org](https://www.pgadmin.org/)
+<br>Download and install it from [www.pgadmin.org](https://www.pgadmin.org/)
 
 # Install Conda environment # 
 
-See (README_SQL_to_be_installed.txt)[.\README_SQL_to_be_installed.txt]
+See [README_SQL_to_be_installed.txt](./README_SQL_to_be_installed.txt)
 
 # Environmental database setup #
 
