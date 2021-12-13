@@ -10,6 +10,8 @@ Additionally the GUI based admin tool **pgAdmin4** will be used.
 
 # Install Conda environment # 
 
+Install the following packages in our standard `geo` environment: `sqlalchemy psycopg2 pgspecial ipython-sql` 
+
 See [README_SQL_to_be_installed.txt](./README_SQL_to_be_installed.txt)
 
 # Environmental database setup #
