@@ -1,4 +1,4 @@
-# Install PostgreSQL #
+# 1. Install PostgreSQL #
 
 **PostgreSQL** is the most advanced open source object relational database management system (ORDBMS).
 <br>Download and install it from [www.postgresql.org](https://www.postgresql.org/)
@@ -8,13 +8,13 @@
 Additionally the GUI based admin tool **pgAdmin4** will be used.
 <br>Download and install it from [www.pgadmin.org](https://www.pgadmin.org/)
 
-# Install Conda environment # 
+# 2. Install Conda environment # 
 
 Install the following packages in our standard `geo` environment: `sqlalchemy psycopg2 pgspecial ipython-sql` 
 
 See [README_SQL_to_be_installed.txt](./README_SQL_to_be_installed.txt)
 
-# Environmental database setup #
+# 3. Environmental database setup #
 
 Our first database for training is `env_db`. Most of the data we will store is related to environmental science, hence the name `env_db`. It is a relational database (RDB) running on the ORDBMS PostgreSQL.
 
@@ -42,7 +42,7 @@ Create the new database `env_db` using the script [./sql_scripts/020_create_data
 
 	psql -h localhost -U postgres -d postgres -f 020_create_database_env_db_V001.sql
 
-# Create the example relations used in RA presentation #
+# 4. Create the example relations used in RA presentation #
 
 In the presentation on Relational Algebra (RA) several relations are used to demonstrate the different operations.  
 
