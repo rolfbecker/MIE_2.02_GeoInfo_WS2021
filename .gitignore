@@ -26,6 +26,8 @@ data/original/NRW_DOP_Olpe/
 
 data/original/DWD/
 
+data/original/OpenHygrisC_gw-messstellen-messwerte_EPSG25832_CSV/
+
 
 data/generated/DWD/hourly/precipitation/recent/prec_ts_appended.csv
 
