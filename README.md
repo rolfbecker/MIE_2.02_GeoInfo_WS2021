@@ -5,3 +5,4 @@ This is a compulsory course of the [**Information Engineering and Computer Scien
 Course manager and instructor: Rolf Becker. 
 Teaching assistants: Clein Sarmiento.
 
+A few accompanying [**videos**](https://www.youtube.com/playlist?list=PLfPRKnDMauJ8rNQF-nryd1ZzJ9Fz_Wgfc) are published on YouTube. 
