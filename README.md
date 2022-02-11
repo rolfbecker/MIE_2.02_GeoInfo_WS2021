@@ -5,5 +5,5 @@ This is a compulsory course of the [**Information Engineering and Computer Scien
 Course manager and instructor: Rolf Becker. 
 Teaching assistants: Clein Sarmiento.
 
-A few accompanying [**videos**](https://www.youtube.com/playlist?list=PLfPRKnDMauJ8rNQF-nryd1ZzJ9Fz_Wgfc) are published on YouTube. The online lecture recordings are only visible for students of HSRW to respect the privacy of students visibly or audibly participating in discussions.
+A few accompanying [**videos**](https://www.youtube.com/playlist?list=PLfPRKnDMauJ8rNQF-nryd1ZzJ9Fz_Wgfc) are published on YouTube. Online lecture recordings are only visible to HSRW students to protect the privacy of students who visibly or audibly participate in the discussions.
 
