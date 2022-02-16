@@ -69,25 +69,29 @@ Installing `pyproj` with `conda` sometimes does not set the environment variable
 **Workaround 1: Set the environment variable explicitly in your Python code!**
 
 ```
+# Correct wrong environment variable value occurring when using OSGeo4W installer
+
 import os
-print(os.environ['PROJ_LIB'])
-print(os.environ['GDAL_DATA'])
+#proj_lib = os.environ['proj_lib']
+#print(proj_lib)
+#-> C:\OSGeo4W64\share\proj (wrong!)
 
--> C:\OSGeo4W64\share\proj (wrong!)
--> C:\Users\me\Anaconda3\envs\geo\Library\share\gdal
+conda_prefix = os.environ['conda_prefix']
+print(f"CONDA_PREFIX: {conda_prefix:s}")
+os.environ['proj_lib'] = conda_prefix + r"\Library\share\proj"
+proj_lib = os.environ['proj_lib']
+print(f"New env var value: \nPROJ_LIB={proj_lib:s}")
+#-> C:\Users\me\Anaconda3\envs\geo\Library\share\proj (correct!)
 
-# Set the env var
-os.environ['PROJ_LIB'] = r'C:\Users\me\Anaconda3\envs\geo\Library\share\proj'
-print(os.environ['PROJ_LIB'])
-print(os.environ['GDAL_DATA'])
 
--> C:\Users\me\Anaconda3\envs\geo\Library\share\proj (correct!)
--> C:\Users\me\Anaconda3\envs\geo\Library\share\gdal
+# Now pyproj should work
+import pyproj
+print(f"pyproj.datadir.get_data_dir() -> {pyproj.datadir.get_data_dir():s}") 
 
-# Now geopandas (i.e. the projection module as part of it) should work:
+# Now geopandas (it uses pyproj) should work, too:
 import geopandas as gpd
-
 ```
+
 
 **Workaround 2: Set the environment variable in your canda environment**
 
